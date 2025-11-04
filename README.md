@@ -685,10 +685,16 @@ def euler_phi(n, primes_under_sqrt_n):
 
 ```
 
+### Python Cache
+```python
+from functools import cache
+@cache
+def method()
+```
 
 ### LRU Cache
 ```python
-import functools
+from functools import lru_cache
 @functools.lru_cache(maxsize=None)
 ```
 
@@ -733,13 +739,6 @@ Exponent with modulo: `pow(base, exponent, mod)`
 For python, we use `sys.stdin` for reading quickly line-by-line. You can also `sys.stdin.readline()` if you don't want to iterate over it. Keep in mind that this includes the `\n` character
 
 ### Fast Input
-```python
-import sys
-data = list(map(int, sys.stdin.buffer.read().split()))
-it = iter(data)
-```
-
-### Fast Output
 ```python
 import sys
 
